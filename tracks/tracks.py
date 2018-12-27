@@ -105,5 +105,10 @@ result = '''SELECT Track.title as track, Artist.name, Album.title as album, Genr
 for row in cur.execute(result):
     print(row[0], row[1], row[2], row[3])
 
+print("\nSqlite database adapter version: %s" % sqlite3.sqlite_version) 
+        
+
+       
+        
 
 cur.close()
